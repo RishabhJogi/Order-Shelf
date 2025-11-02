@@ -1,0 +1,209 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Management Dashboard</title>
+        <link rel="stylesheet" href="/css/Admin/admin_User_Managment.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+
+    <body>
+        
+
+        <div class="table-container">
+            <div class="top-controls">
+                <h4 class="fw-bold text-secondary">User Management</h4>
+                <div class=" d-flex  p-3 justify-content-center  align-items-center">
+
+                <input type="text" placeholder="Search user..." class="search-input">
+
+
+                <!--  Add User Button -->
+                <button type="button" class="btn btn-success m-2 " data-bs-toggle="modal" data-bs-target="#addUserModal"> <i class="bi bi-plus-circle-dotted"></i> Add User</button>
+                </div>
+            </div>
+
+             
+
+             <!-- Add User Modal -->
+                <div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addBookModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header bg-success text-white">
+                                <h5 class="modal-title" id="addBookModalLabel">Add New User</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div class="modal-body">
+                                <form id="addBookForm">
+                                    <!-- User Name -->
+                                    <div class="mb-3">
+                                        <label for="User-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="user-name"
+                                            placeholder="Enter User Name" required>
+                                    </div>
+                                    <!-- User Email -->
+                                    <div class="mb-3">
+                                        <label for="User-Email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="user-Email"
+                                            placeholder="Email" required>
+                                    </div>
+
+                                    <!-- User Contact -->
+                                    <div class="mb-3">
+                                        <label for="User-Contact" class="form-label">Contact</label>
+                                        <input type="tel" class="form-control" id="user-Contact"
+                                            placeholder="+91XXXXXXX" required>
+                                    </div>
+
+                                    <div class="row ">
+                                        <!-- User Status maintainnig -->
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="User-Status" class="form-label">Status</label>
+                                            <select class="form-select" id="user-Status" required>
+                                                <option value="" selected disabled>Select Status</option>
+                                                <option value="Active">Active</option>
+                                                <option value="On Hold">On Hold</option>
+                                                <option value="To be Verified">To be Verified</option>
+                                                <option value="Blocked">Blocked</option>
+                                            
+                                            </select>
+                                        </div>
+
+                                  
+
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="User-Image" class="form-label">Image URL</label>
+                                        <input type="file" class="form-control"
+                                            onchange="handle_Admin_Added_New_User_ImageChange(event)" id="user-Image"
+                                            placeholder="Select Image ">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success" onclick="handle_Save_New_User()">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             <!-- Updated User Modal -->
+                <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header bg-success text-white">
+                                <h5 class="modal-title" id="editUserModallLabel">Update User Details</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <!-- Modal Body -->
+                            <div class="modal-body">
+                                <form id="addBookForm">
+                                    <!-- Update User Name -->
+                                    <div class="mb-3">
+                                        <label for="update-User-name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="update-User-name"
+                                            placeholder="Enter User Name" required>
+                                    </div>
+                                    <!-- Update  User Email -->
+                                    <div class="mb-3">
+                                        <label for="update-User-Email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="update-User-Email"
+                                            placeholder="Email" required>
+                                    </div>
+
+                                    <!-- Update  User Contact -->
+                                    <div class="mb-3">
+                                        <label for="update-User-Contact" class="form-label">Contact</label>
+                                        <input type="tel" class="form-control" id="update-User-Contact"
+                                            placeholder="+91XXXXXXX" required>
+                                    </div>
+
+                                    <div class="row ">
+                                        <!-- Update  User Status maintainnig -->
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="update-User-Status" class="form-label">Status</label>
+                                            <select class="form-select" id="update-User-Status" required>
+                                                <option value="" selected disabled>Select Status</option>
+                                                <option value="Active">Active</option>
+                                                <option value="On Hold">On Hold</option>
+                                                <option value="To be Verified">To be Verified</option>
+                                                <option value="Blocked">Blocked</option>
+                                            
+                                            </select>
+                                        </div>
+
+                                  
+
+                                    </div>
+
+
+                                    <div class="mb-3">
+                                        <label for="update-User-Image" class="form-label">Image URL</label>
+                                        <input type="file" class="form-control"
+                                            onchange="handle_Admin_Added_New_User_ImageChange(event)" id="update-User-Image"
+                                            placeholder="Select Image ">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success" onclick="handle_Update_New_User()">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th>Full name</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Status</th>
+                            <th>Joined date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        
+                    
+                           
+                      
+                    
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="/js/Admin/admin_User_Managment.js"></script>
+    </body>
+
+    </html>

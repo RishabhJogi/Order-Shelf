@@ -1,0 +1,115 @@
+/* Overall Page */
+body {
+  background-color: #f8f9fc;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background-color: #f1f3f9;
+  padding: 25px 15px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #1a1a1a;
+}
+
+.nav-link {
+  color: #5c636a;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #e7e9f5;
+  color: #1a1a1a;
+}
+
+/* Main Section */
+.main-content {
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #1a1a1a;
+}
+
+/* Search and Filter */
+input.form-control,
+select.form-select {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+}
+
+/* Card & Table */
+.card {
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.table thead {
+  background-color: #f3f4f6;
+}
+
+.table th {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.table td {
+  color: #2c2c2c;
+}
+
+/* Status Labels - Simple Gray Shades */
+.status-label {
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #e5e7eb;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Simple muted variations */
+.status-label.delivered {
+  background-color: #e8e9ec;
+  color: #1f2937;
+}
+
+.status-label.pending {
+  background-color: #f1f1f3;
+  color: #444;
+}
+
+.status-label.cancelled {
+  background-color: #ececec;
+  color: #555;
+}
+
+/* Buttons */
+.btn-outline {
+  border: 1px solid #c9ccd1;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: #e7e9f5;
+  color: #1a1a1a;
+}

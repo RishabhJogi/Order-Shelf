@@ -1,0 +1,201 @@
+
+:root {
+  --common-color: #003049;
+  --text-dark: #222;
+  --text-light: #fff;
+  --bg-light: #f8f9fa;
+}
+
+
+
+
+
+
+.navbar-content {
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-content:hover {
+  color: var(--common-color);
+}
+
+.navbar-btn {
+  background-color:rgb(0,93,173)!important;
+  color: var(--text-light) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  /* border: 1px solid black !important; */
+}
+
+.navbar-btn:hover {
+  background-color: rgb(0,93,173) !important;
+  transform: scale(1.03) !important;
+}
+
+.navbar-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 🖼️ Carousel (Hero Section) */
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+}
+
+.btn.btn-lg.btn-primary {
+  background-color: var(--common-color);
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn.btn-lg.btn-primary:hover {
+  background-color: #022b42;
+}
+
+/* 🏷️ Section Headings */
+.name-div h2 {
+  font-weight: 600;
+  color: var(--common-color);
+  border-left: 5px solid var(--common-color);
+  padding-left: 12px;
+}
+
+/* 📚 Book Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--common-color);
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.card .fw-bold {
+  font-size: 1rem;
+  color: var(--common-color);
+}
+
+.btn-primary {
+  background-color: var(--common-color);
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #022b42;
+}
+
+/* 🧑‍🎓 Authors Section */
+.author-div {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.author-card-div {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.author-card-div img {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.author-card-div:hover img {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.author-card-div h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--common-color);
+}
+
+/* 🦶 Footer */
+footer {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+footer h5 {
+  color: var(--common-color);
+  font-weight: 600;
+}
+
+footer a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--common-color);
+}
+
+footer button {
+  background-color: var(--common-color);
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+
+footer button:hover {
+  background-color: #022b42;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+  .carousel-item img {
+    height: 400px;
+  }
+  .card img {
+    height: 220px;
+  }
+}

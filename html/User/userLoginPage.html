@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login Page</title>
+    <link rel="stylesheet" href="/css/User/userLogin.css">
+    
+     <!-- <script src="../js/login.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="user-login-div d-flex   flex-wrap gap-5">
+
+        <div class="left-section ">
+            <img src="/Assests/admin-login1.jpg" alt="" height="100%" width="100%">
+        </div>
+
+        <div class="right-section d-flex flex-column justify-content-center align-items-center">
+            <div class="login-heading-div d-flex flex-column justify-content-center align-items-center   ">
+
+                <h1>Welcome back </h1>
+                <span>Enter your email password to acces your account.</span>
+            </div>
+            <div class="form-section  mt-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp"
+                            placeholder="Enter your email">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="login-password"
+                            placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3 form-check d-flex gap-5">
+                        <div class="Remember-me-div">
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me </label>
+                        </div>
+                        <span>Foget your Password ?</span>
+                    </div>
+                    <button onclick="handleLogin()"  class="btn btn-primary  w-100">Login</button>
+                    <div class="signup-div d-flex justify-content-center align-items-center mt-2 gap-2">
+                        Dont have an Account? <a href="/html/User/userSignUpPage.html"  >Register Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/User/userAuth.js"></script>
+</body>
+
+</html>

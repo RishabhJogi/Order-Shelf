@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --bg-color:rgb(0, 63, 81);
+}
+.h4,.h2{
+    color: var(--bg-color)!important;
+}
+.signup-btn{
+    color: var(--bg-color)!important;
+    background-color: var(--bg-color)!important;
+}
+.price-div{
+    color: var(--bg-color)!important;
+}
+.ul-list li{
+    color: var(--bg-color);
+}
+.th-div{
+    color: var(--bg-color)!important;
+}
+.table-row-div .table-list
+{
+   color: var(--bg-color)!important;
+}

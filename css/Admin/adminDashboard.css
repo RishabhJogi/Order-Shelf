@@ -1,0 +1,80 @@
+/* Layout */
+.admin-dashboard {
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #f3f4f6;
+  border-right: 1px solid #e5e7eb;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar h4 {
+  color: #111827;
+  font-weight: 600;
+}
+
+.sidebar .nav-link {
+  color: #4b5563;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+.dashboard-content {
+  margin-left: 260px;
+  overflow-y: auto;
+}
+
+/* Metric Cards */
+.metric-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.metric-card h6 {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.metric-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Cards and Table */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.table th {
+  color: #374151;
+  font-weight: 600;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+.recentOrdersTable{
+  overflow-x: scroll;
+}
+.recentOrdersTable::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}

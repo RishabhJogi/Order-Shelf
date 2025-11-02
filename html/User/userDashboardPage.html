@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User dashboard</title>
+    <link rel="stylesheet" href="/css/User/userDashboard.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class=" p-3 mb-3 ">
+        <div class="container   ">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a
+                    href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img src="../Assests/book-logo.jpg" height="auto" width="100px" alt=""> </a>
+                <ul class="ul-list nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis fs-5">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis fs-5">About Us</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis fs-5">Contact Us</a></li>
+                    <li><a href="#" class="nav-link px-2 link-body-emphasis fs-5">Based on Interest</a></li>
+                </ul>
+
+
+                <form class="d-flex  justify-content-center align-items-center  gap-4" role="search">
+                    <div class="cart-icon-container" id="cart-icon-container">
+                        <a href="/html/User/userCartPage.html" class="cart-link">
+                            <i class="bi bi-cart-plus "></i>
+                            <span id="item-num-span"></span>
+                        </a>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </header>
+    <!--  hero section -->
+    <div class="hero-section container  ">
+
+
+        <div class=" p-4 p-md-5 mb-4 rounded text-white  ">
+            <div class="col-lg-6 px-0 ">
+                <h1 class="display-4 fst-italic fw-bold" space>Welcome<span id="loggedInUsername"
+                        style="padding: 12px;"></span></h1>
+                <p class="lead my-3 text-white" style="color: rgb(87,78,66) !important;">A space dedicated to
+                    innovation, problem-solving, and creative growth.
+                    Explore projects, thoughts, and experiences that reflect passion for learning and building.</p>
+                <p class="lead mb-0"><a href="#" class="text-white fw-bold "
+                        style="  color: rgb(87, 78, 66) !important; text-decoration: none;">Continue reading...</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- recommended book -->
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Recommended Books</h2>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class=" col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://images.unsplash.com/photo-1546521677-b3a9b11bee6f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvdmVyfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600'); background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Reads that spark curiosity</h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto"> <img src="/Assests/book-logo.jpg" alt="Bootstrap" width="32"
+                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li>Jack Thorne</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://images.unsplash.com/photo-1713896608871-ed0a2658c913?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvdmVyJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600');background-size: cover;">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Timeless tales worth revisiting</h3>
+
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto"> <img src="/Assests/book-logo.jpg" alt="Bootstrap" width="32"
+                                    height="32" class="rounded-circle border border-white"> </li>
+                            <li>John Tiffany</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-cover card-overlay h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('https://images.unsplash.com/photo-1726951352977-7260c3eaec70?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdmVyJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600'); background-size: cover; background-position: center;">
+
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                            "Books that leave a lasting impact."
+                        </h3>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="/Assests/book-logo.jpg" alt="Bootstrap" width="32" height="32"
+                                    class="rounded-circle border border-white">
+                            </li>
+                            <li>J.K. Rowling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Best sellers book -->
+    <section class="container p-4 product-section d-flex flex-column">
+        <h2 class="section-heading mb-4 border-bottom">Best Sellers Books</h2>
+
+        <div class="row" id="Bestsellers">
+
+        </div>
+
+    </section>
+
+
+    <!-- wishlist books -->
+
+    <section class="container p-4 product-section d-flex flex-column">
+        <h2 class="section-heading mb-4 border-bottom">WishList Books</h2>
+
+        <div class="row" id="WishListBooks">
+
+        </div>
+
+    </section>
+
+    <!-- Highly orders books -->
+    <section class="container p-4 product-section d-flex flex-column">
+        <h2 class="section-heading mb-4 border-bottom">Highly Oder Books</h2>
+
+        <div class="row" id="highlyOrderbooks">
+
+        </div>
+
+    </section>
+    <!-- Audio Books  -->
+    <section class="container p-4 product-section d-flex flex-column">
+        <h2 class="section-heading mb-4 border-bottom">Audi Books</h2>
+
+        <div class="row" id="Audiobooks">
+
+        </div>
+
+    </section>
+
+    <!-- Footer  -->
+    <div class="container-fluid border-top mt-5">
+        <footer class="py-5 container">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="ul-list nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Help Center</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Newsletter</h5>
+                    <ul class="ul-list nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Stay updated</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">latest books</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">offers</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Membership</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chat with us </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Connect With Us</h5>
+                    <ul class="ul-list nav flex-column">
+                        <li class="ul-list nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-body-secondary">+91-98765-43210</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-body-secondary">mailto:support@yourapp.com</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-body-secondary">http://www.yourapp.com</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                class="form-control" placeholder="Email address" fdprocessedid="jeco"> <button
+                                class="btn btn" type="button" fdprocessedid="a14vvv">Subscribe</button> </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2025 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
+                                width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi"
+                                width="24" height="24" aria-hidden="true">
+                                <use xlink:href="#facebook"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/js/User/userPanelDashboard.js"></script>
+</body>
+
+</html>

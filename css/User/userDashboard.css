@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+  --bg-color: rgb(0, 93, 173);
+}
+
+.btn {
+  background-color: rgb(255, 248, 241) !important;
+  color: rgb(87, 78, 66) !important;
+}
+
+.ul-list li a {
+  /* color: rgb(70, 153, 226)!important; */
+  color: rgb(87, 78, 66) !important;
+  text-decoration: none !important;
+}
+
+.hero-section {
+  /* background-color: var(--bg-color) !important; */
+  background-color: rgb(255, 248, 241) !important;
+  color: rgb(87, 78, 66) !important;
+  border-radius: 10px;
+
+}
+
+::placeholder {
+  /* color: var(--bg-color) !important; */
+  color: rgb(87, 78, 66) !important;
+
+}
+
+.col-body-outer {
+  flex-grow: 1;
+}
+
+.col-body {
+  flex-grow: 1 !important;
+
+}
+
+h1,
+h2,
+h5 {
+
+  color: rgb(87, 78, 66) !important;
+}
+
+p {
+  color: rgb(87, 78, 66) !important;
+}
+
+/* === Cart Icon Wrapper === */
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+  background: #f8fafc;
+  /* light neutral background */
+  border: 1px solid #e2e8f0;
+
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.cart-icon-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px  rgb(87, 78, 66);
+}
+
+/* === Cart Icon === */
+.cart-link i {
+  font-size: 50px;
+  color: #555554;
+  /* Professional Blue */
+  position: relative;
+}
+
+/* === Badge === */
+#item-num-span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgb(87, 78, 66);
+  /* Golden Yellow */
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff;
+  /* white border for contrast */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.book-card {
+  background-color: #fff8f1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-img {
+  height: 260px;
+  object-fit: cover;
+}
+
+.wishlist-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  background-color: #ffe5b4;
+  color: red;
+}
+
+.btn-warning {
+  background-color: #574e42 !important;
+}
+
+.btn-warning:hover {
+  background-color: #e07c00;
+}

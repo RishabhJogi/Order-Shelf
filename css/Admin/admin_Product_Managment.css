@@ -1,0 +1,95 @@
+body {
+  background-color: #f9fafb;
+  font-family: "Inter", sans-serif;
+  color: #111827;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background-color: #fff;
+  border-right: 1px solid #e5e7eb;
+  min-height: 100vh;
+  position: fixed;
+}
+
+.sidebar .brand {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.sidebar .nav-link {
+  color: #4b5563;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+}
+
+/* Main Content */
+.dashboard {
+  margin-left: 250px;
+}
+
+.dashboard h5 {
+  font-size: 16px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transform: translateY(-3px);
+}
+
+.product-card img {
+  border-radius: 10px;
+  background-color: #f3f4f6;
+}
+
+.product-card h6 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #1e3a8a;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  .dashboard {
+    margin-left: 0;
+  }
+}
+ 

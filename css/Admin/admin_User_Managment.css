@@ -1,0 +1,97 @@
+ body {
+     background-color: #f8fafc;
+     font-family: "Inter", sans-serif;
+ }
+
+
+ .table-container {
+     background-color: #fff;
+     border-radius: 12px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+     padding: 20px;
+     margin: 40px auto;
+     max-width: 1200px;
+ }
+
+ .table thead {
+     background-color: #f1f5f9;
+ }
+
+ .table th {
+     color: #475569;
+     font-weight: 600;
+     font-size: 15px;
+ }
+
+ .table td {
+     vertical-align: middle;
+     font-size: 14px;
+ }
+
+ .user-avatar {
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-right: 10px;
+ }
+
+ .status-active {
+     color: #1f7d42;
+     font-weight: 600;
+     font-size: 15px !important;
+ }
+
+ .status-inactive {
+     color: #dc2626;
+     font-weight: 600;
+ }
+
+ .badge-2fa {
+     background-color: #fef3c7;
+     color: #92400e;
+     font-weight: 500;
+     border-radius: 6px;
+     padding: 4px 10px;
+ }
+
+ .btn-view {
+     background-color: #198754;
+     color: #ffffff;
+     border: none;
+     border-radius: 6px;
+     padding: 5px 10px;
+     font-weight: 500;
+ }
+
+ .btn-edit {
+     background-color: #e0f2fe;
+     color: #0369a1;
+     border: none;
+     border-radius: 6px;
+     padding: 5px 10px;
+     font-weight: 500;
+ }
+
+ .btn-delete {
+     background-color: #fee2e2;
+     color: #b91c1c;
+     border: none;
+     border-radius: 6px;
+     padding: 5px 10px;
+     font-weight: 500;
+ }
+
+ .top-controls {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 15px;
+ }
+
+ .search-input {
+     border-radius: 8px;
+     border: 1px solid #d1d5db;
+     padding: 6px 10px;
+     width: 220px;
+ }

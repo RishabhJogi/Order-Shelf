@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Management</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <style>
+    body {
+      background-color: #f4f6f8;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      padding: 30px;
+    }
+
+    .order-container {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 25px 30px;
+      max-width: 1100px;
+      margin: auto;
+      transition: all 0.3s ease;
+    }
+
+    .order-container:hover {
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: #222;
+      border-bottom: 3px solid #007bff;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    table {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    thead {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tbody tr {
+      transition: all 0.2s ease;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f6ff;
+    }
+
+    .status {
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 8px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .delivered {
+      background-color: #d1f7c4;
+      color: #218838;
+    }
+
+    .shipped {
+      background-color: #fff3cd;
+      color: #b8860b;
+    }
+
+    .processing {
+      background-color: #cce5ff;
+      color: #004085;
+    }
+
+    .cancelled {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+
+    .table th, .table td {
+      vertical-align: middle;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="order-container">
+    <h2><i class="bi bi-box-seam"></i> Order Management</h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Order ID</th>
+            <th>Customer Name</th>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>#ORD1001</td>
+            <td>Aarav Sharma</td>
+            <td>The Alchemist</td>
+            <td>₹499</td>
+            <td><span class="status delivered">Delivered</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>#ORD1002</td>
+            <td>Sneha Patel</td>
+            <td>Harry Potter – Goblet of Fire</td>
+            <td>₹699</td>
+            <td><span class="status shipped">Shipped</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>#ORD1003</td>
+            <td>Rohan Verma</td>
+            <td>Rich Dad Poor Dad</td>
+            <td>₹399</td>
+            <td><span class="status processing">Processing</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>#ORD1004</td>
+            <td>Priya Mehta</td>
+            <td>Think Like a Monk</td>
+            <td>₹550</td>
+            <td><span class="status cancelled">Cancelled</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>#ORD1005</td>
+            <td>Aditya Singh</td>
+            <td>Wings of Fire</td>
+            <td>₹350</td>
+            <td><span class="status delivered">Delivered</span></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>#ORD1006</td>
+            <td>Kavya Iyer</td>
+            <td>Atomic Habits</td>
+            <td>₹450</td>
+            <td><span class="status shipped">Shipped</span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>#ORD1007</td>
+            <td>Arjun Malhotra</td>
+            <td>Ikigai</td>
+            <td>₹320</td>
+            <td><span class="status processing">Processing</span></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>#ORD1008</td>
+            <td>Simran Kaur</td>
+            <td>The Power of Now</td>
+            <td>₹499</td>
+            <td><span class="status delivered">Delivered</span></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>#ORD1009</td>
+            <td>Manish Gupta</td>
+            <td>Zero to One</td>
+            <td>₹600</td>
+            <td><span class="status shipped">Shipped</span></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>#ORD1010</td>
+            <td>Neha Reddy</td>
+            <td>To Kill a Mockingbird</td>
+            <td>₹420</td>
+            <td><span class="status delivered">Delivered</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

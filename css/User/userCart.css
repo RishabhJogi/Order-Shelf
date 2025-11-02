@@ -1,0 +1,56 @@
+body {
+  background-color: #f8f7f3;
+  font-family: "Poppins", sans-serif;
+  color: #1f1f1f;
+}
+
+.cart-table th {
+  font-weight: 600;
+  color: #1f1f1f;
+  border-bottom: 2px solid #e0e0e0 !important;
+}
+
+.cart-table td {
+  vertical-align: middle;
+  padding: 1rem 0.75rem;
+}
+
+.cart-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.qty-group .btn {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
+
+.continue-link {
+  color: #000;
+  transition: 0.3s;
+}
+
+.continue-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: #635bff;
+  border-color: #635bff;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #2a382e;
+}
+
+.text-muted.small {
+  font-size: 0.85rem;
+}
