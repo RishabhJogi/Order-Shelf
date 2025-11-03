@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Nest Login</title>
+    <link rel="stylesheet" href="/css/Vendor/Vendor_Login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo">
+        🏠 <span>Vendor</span>
+      </div>
+      <div class="text">
+      <h2>Manage Your Orders Seamlessly</h2>
+<p>Track new orders, manage deliveries, and update your stock in real time. Simplify your vendor operations with a single, easy-to-use platform.</p>
+
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Welcome Back to Real Nest!</h2>
+      <p>Sign in to your account</p>
+
+      <form>
+        <label>Your Email</label>
+        <input type="email" placeholder="Email" id="login-email" required>
+        
+        <label>Password</label>
+        <input type="password" placeholder="Password" id="login-password" required>
+
+        <div class="form-footer">
+          <div class="remember">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+          </div>
+          <div class="forgot">
+            <a href="#">Forgot Password?</a>
+          </div>
+        </div>
+
+        <button class="btn-login" onclick="handle_Vendor_Login()">Login</button>
+      </form>
+
+      <div class="social-buttons">
+        <button>🔍 Sign in with Google</button>
+        <button>🍎 Sign in with Apple</button>
+      </div>
+
+      <div class="register">
+        Don’t have any account? <a href="#">Register</a>
+      </div>
+    </div>
+    
+  </div>
+ 
+</body>
+<script type="module" src="/js/Vendor/Vendor_Auth.js" defer></script>
+</html>

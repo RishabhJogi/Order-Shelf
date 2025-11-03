@@ -46,7 +46,7 @@ document.getElementById("final-checkout-item").innerHTML = checkOutItem.map((ite
 }).join("");
 
 function generateOrderID() {
-    const prefix = "CUST"; 
+    const prefix = "ORD"; 
     const date = new Date();
 
     // Format date as YYYYMMDD

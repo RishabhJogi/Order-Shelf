@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Management Dashboard</title>
+
+  <!-- LINK THE CSS FILE -->
+  <link rel="stylesheet" href="/css/Vendor/Vendor_Dashboard_Panel.css">
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+  <!-- Sidebar -->
+<div class="sidebar">
+  <div>
+    <div class="logo border-bottom"  >Vendor Dashboard</div>
+    <ul class="menu">
+      <li><a href="/html/Vendor/Vendor_Dashboard_Panel.html">Dashboard</a></li>
+      <li><a href="/html/Vendor/pending_Order_Management.html">Pending Orders</a></li>
+      <li><a href="/html/Vendor/Cancelled_Order_Management.html">Cancelled Orders</a></li>
+     
+    </ul>
+  </div>
+  <div class="logout"><a href="#">Logout</a></div>
+</div>
+
+
+  <!-- Main Content -->
+  <div class="main-content">
+  
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="card orange">
+        <div>Today's Order<br><span style="font-size:22px;">89</span></div>
+      </div>
+      <div class="card green">
+        <div>Total Orders<br><span style="font-size:22px;">15,235</span></div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Date & Time</th>
+          <th>Customer Name</th>
+          <th>Store Name</th>
+          <th>Item Quantity</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>View More</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>21 May 2022</td>
+          <td>Tanya Carroll</td>
+          <td>Bistro Bazaar</td>
+          <td>2</td>
+          <td>₹34</td>
+          <td><span class="status pending">Completed</span></td>
+          <td class="action "><i class="bi bi-eye-fill "></i></td>
+        </tr>
+        
+        <tr>
+          <td>21 May 2022</td>
+          <td>Tanya Carroll</td>
+          <td>Bistro Bazaar</td>
+          <td>2</td>
+          <td>₹34</td>
+          <td><span class="status pending">Completed</span></td>
+          <td class="action "><i class="bi bi-eye-fill "></i></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

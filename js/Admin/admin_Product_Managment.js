@@ -59,22 +59,23 @@ function renderData() {
         return `
         <div class="col-md-4 col-lg-3 border mx-2 my-2">
             <div class="product-card p-3 shadow-sm rounded">
-                <img src="${item.ImageUrl} class="book-img w-100 rounded-4" alt="${item.name}"" class="img-fluid rounded mb-2" alt="">
+               <img src="${item.ImageUrl}" 
+     alt="${item.name}" 
+     class="book-img w-100 rounded-4 img-fluid mb-2"
+     style="height: 220px; object-fit: cover;"/>
                 <div class="d-flex justify-content-between align-items-center">
-                 <h6 class="mb-0">${item.name}</h6>
-                 <small class="">${item.date}</small>
+                    <h6 class="mb-0">${item.name}</h6>
+                    <small class="">${item.date}</small>
                 </div>
                 <p class="small text-muted mb-1">${item.description}</p>
-                
                 <div class="d-flex justify-content-between small">
                     <span>Genre: ${item.jonours}</span>
                     <span>Category: ${item.Category}</span>
                 </div>
                 <div class="mt-2 small d-flex justify-content-between">
-                    <span class="  badge bg-light text-success  border">₹${item.Price}</span>
+                    <span class="badge bg-light text-success border">₹${item.Price}</span>
                     <span class="badge bg-success mb-2">Active</span>
                 </div>
-
                 <div class="mt-3 d-flex justify-content-between">
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal"
                         data-bs-target="#updateBookModal" onclick="update_Book(${index})">
@@ -88,6 +89,7 @@ function renderData() {
         </div>`;
     }).join("");
 }
+
 
 // Delete book
 function remove_Book(index) {

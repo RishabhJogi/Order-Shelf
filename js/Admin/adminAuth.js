@@ -6,7 +6,7 @@
  * 4. Logout
  */
 
-let adminData = JSON.parse(localStorage.getItem("adminData"))||[];
+let adminData = JSON.parse(localStorage.getItem("adminData")) || [];
 
 // Function for handling login logic
 function handleRegister() {
@@ -24,7 +24,7 @@ function handleRegister() {
 
     adminData.push(data);
     localStorage.setItem("adminData", JSON.stringify(adminData));
-    
+
     setTimeout(() => {
         window.location.href = "/html/Admin/adminLoginPage.html";
     }, 1000)
@@ -46,15 +46,10 @@ function handleLogin() {
     for (let i = 0; i < adminList.length; i++) {
         if (adminList[i].email === username) {
             if (adminList[i].password === password) {
-                let loggedInUser = {
-                    email: adminList[i].email,
-                    // name: adminList[i].name || username
-                };
-                localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
                 console.log("Stored:", localStorage.getItem("loggedInUser"));
 
-                // add a 1-second delay before redirect
+               
                 setTimeout(() => {
                     window.location.href = "/html/Admin/adminDashboardPage.html";
                 }, 3000);
@@ -72,3 +67,5 @@ function handleLogin() {
 
 
 }
+window.handleRegister = handleRegister;
+window.handleLogin = handleLogin;
