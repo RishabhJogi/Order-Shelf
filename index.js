@@ -22,7 +22,7 @@ authorsDiv.innerHTML = authors_list
              style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
 
         <h4 class="mt-3">${author.name}</h4>
-        <p style="font-size: 14px; color: #6f6f6f;">${author.famous_for}</p>
+        <p style="font-size: 16px; color: #6f6f6f;">${author.famous_for}</p>
         <p style="font-size: 13px; color: #888;">Books: ${author.books_written}</p>
       </div>
     `;
